@@ -1,0 +1,9 @@
+<div class="login">
+	<form name="loginForm" ng-submit="loginForm.$valid && loginCtrl.LogIn(loginCtrl.user)" novalidate >
+	
+		<input name="Nick" placeholder="Usuario" ng-model="loginCtrl.user.nick" type="text" required />
+		<input name="Contraseña" placeholder="Contraseña" ng-model="loginCtrl.user.pass" type="password" required />
+		<!-- <input class="btn btn-primary" type="submit" value="Ingresar" /> -->
+		<button type="submit" ng-disabled="loginForm.$invalid">Ingresar</button>
+	</form>
+</div>
